@@ -1,0 +1,47 @@
+---
+title: "Faecal sludge analysis"
+format: 
+  html:
+    embed_resources: true
+execute:
+  warning: false
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+sludge <- read_csv("tbl-01-faecal-sludge-analysis.csv")
+```
+
+```{r}
+ggplot(data = sludge,
+       mapping = aes(x = system, 
+                     y = ts)) +
+  geom_boxplot() +
+  facet_wrap(~location)
+```
+
+```{r}
+tbl_summary <- sludge |> 
+  filter(!is.na(users)) |> 
+  group_by(system, location) |> 
+  summarise(
+    mean_users = mean(users),
+    sd_users = sd(users),
+    median_users = median(users),
+    mean_ts = mean(ts),
+    sd_ts = sd(ts),
+    median_ts = median(ts)
+  )
+
+```
+
+```{r}
+tbl_summary |> 
+  knitr::kable(digits = 1)
+```

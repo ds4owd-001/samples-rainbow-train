@@ -1,8 +1,8 @@
 id,date_sample,system,location,users,ts
 1,2023-11-01,pit latrine,household,5,136.24
-2,2023-11-01,pit latrine,household,7,142.22
-3,2023-11-01,pit latrine,household,NA,98.33
-4,2023-11-01,pit latrine,household,6,15.92
+2,2023-11-01,pit latrine,household,7,102.45
+3,2023-11-01,pit latrine,household,NA,57.02
+4,2023-11-01,pit latrine,household,6,27.03
 5,2023-11-01,pit latrine,household,12,97.27
 6,2023-11-02,septic tank,household,7,78.21
 7,2023-11-02,septic tank,household,14,15.24
@@ -14,8 +14,8 @@ id,date_sample,system,location,users,ts
 13,2023-11-03,pit latrine,public toilet,41,55.92
 14,2023-11-03,pit latrine,public toilet,160,15.32
 15,2023-11-03,pit latrine,public toilet,20,22.65
-16,2023-11-04,pit latrine,public toilet,26,8.72
-17,2023-11-04,pit latrine,public toilet,91,43.92
-18,2023-11-04,pit latrine,public toilet,68,10.37
-19,2023-11-04,pit latrine,public toilet,112,23.21
-20,2023-11-04,pit latrine,public toilet,59,15.64
+16,2023-11-04,septic tank,public toilet,26,8.72
+17,2023-11-04,septic tank,public toilet,91,43.92
+18,2023-11-04,septic tank,public toilet,68,10.37
+19,2023-11-04,septic tank,public toilet,112,23.21
+20,2023-11-04,septic tank,public toilet,59,15.64
