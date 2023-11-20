@@ -1,0 +1,33 @@
+---
+title: "Faecal sludge analysis"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+# Introduction
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+sludge <- read_csv("tbl-01-faecal-sludge-analysis.csv")
+```
+
+```{r}
+glimpse(sludge)
+```
+
+```{r}
+sludge |> 
+  filter(!is.na(users)) |> 
+  group_by(system, location) |> 
+  summarise(
+    mean_users = mean(users),
+    sd_users = sd(users),
+    mean_ts = mean(ts),
+    sd_ts = sd(ts)
+  )
+```
