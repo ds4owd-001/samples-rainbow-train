@@ -6,3 +6,6 @@
 *-complete.R
 
 utils
+data/processed/
+
+.DS_Store
