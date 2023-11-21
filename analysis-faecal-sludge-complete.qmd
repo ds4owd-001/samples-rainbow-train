@@ -15,7 +15,7 @@ library(tidyverse)
 ```
 
 ```{r}
-sludge <- read_csv("tbl-01-faecal-sludge-analysis.csv")
+sludge <- read_csv("data/processed/tbl-01-faecal-sludge-analysis.csv")
 ```
 
 ```{r}
@@ -44,4 +44,8 @@ tbl_summary <- sludge |>
 ```{r}
 tbl_summary |> 
   knitr::kable(digits = 1)
+```
+
+```{r}
+write_csv(tbl_summary, "data/final/tbl-01-faecal-sludge-summary.csv")
 ```
