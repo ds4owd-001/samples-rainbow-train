@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 
-*-functions*
 *-complete.R
+
+utils
